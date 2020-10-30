@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using static Day_07_EmployeeWageComputation.CompanyEmpWage;
 
 namespace Day_07_EmployeeWageComputation
 {
-    public class EmpWageBuilderArray
+    public class EmpWageBuilderArray : IEmployeeWage
     {
         //constants
         public const int IS_FULL_TIME = 1;

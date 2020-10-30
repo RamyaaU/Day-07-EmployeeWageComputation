@@ -42,5 +42,15 @@ namespace Day_07_EmployeeWageComputation
         {
             return "Total Emp Wage for company: " + this.company + " is: " + this.totalEmpWage;
         }
+
+        /// <summary>
+        /// Interface EmployeeWage
+        /// </summary>
+        public interface IEmployeeWage
+        {
+            public void addCompanyEmpWage(string company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonth);
+            public int computeEmpWage(CompanyEmpWage companyEmpWage);
+            public void computeEmpWage();
+        }
     }
 }

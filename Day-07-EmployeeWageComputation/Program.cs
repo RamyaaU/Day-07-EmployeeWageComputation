@@ -17,8 +17,7 @@ namespace Day_07_EmployeeWageComputation
             Random random = new Random();
             //Computation
             int empCheck = random.Next(0, 2);
-            //Checks if employee works full time
-            //or part time
+            // Calculates daily wage for part time employee.
             if (empCheck == IS_FULL_TIME)
             {
                 empHrs = 8;
